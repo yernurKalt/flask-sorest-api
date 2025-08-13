@@ -1,0 +1,9 @@
+service:
+  web:
+    build: .
+    ports:
+      - "5005:5000"
+      - "5678:5678"
+    volumes:
+      - .:/app
+    command: ["sh", "-c", ""]
